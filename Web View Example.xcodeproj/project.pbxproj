@@ -12,6 +12,8 @@
 		693FBBAB22671D2200688730 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 693FBBA922671D2200688730 /* Main.storyboard */; };
 		693FBBAD22671D2600688730 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 693FBBAC22671D2600688730 /* Assets.xcassets */; };
 		693FBBB022671D2600688730 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 693FBBAE22671D2600688730 /* LaunchScreen.storyboard */; };
+		693FBBB822671E1800688730 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693FBBB722671E1800688730 /* SecondViewController.swift */; };
+		693FBBBB2267205E00688730 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 693FBBBA2267205D00688730 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		693FBBAC22671D2600688730 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		693FBBAF22671D2600688730 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		693FBBB122671D2600688730 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		693FBBB722671E1800688730 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		693FBBBA2267205D00688730 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				693FBBBB2267205E00688730 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,7 @@
 			children = (
 				693FBBA422671D2200688730 /* Web View Example */,
 				693FBBA322671D2200688730 /* Products */,
+				693FBBB92267205D00688730 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +62,21 @@
 			children = (
 				693FBBA522671D2200688730 /* AppDelegate.swift */,
 				693FBBA722671D2200688730 /* ViewController.swift */,
+				693FBBB722671E1800688730 /* SecondViewController.swift */,
 				693FBBA922671D2200688730 /* Main.storyboard */,
 				693FBBAC22671D2600688730 /* Assets.xcassets */,
 				693FBBAE22671D2600688730 /* LaunchScreen.storyboard */,
 				693FBBB122671D2600688730 /* Info.plist */,
 			);
 			path = "Web View Example";
+			sourceTree = "<group>";
+		};
+		693FBBB92267205D00688730 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				693FBBBA2267205D00688730 /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				693FBBB822671E1800688730 /* SecondViewController.swift in Sources */,
 				693FBBA822671D2200688730 /* ViewController.swift in Sources */,
 				693FBBA622671D2200688730 /* AppDelegate.swift in Sources */,
 			);
@@ -285,13 +301,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8J39KF9DMS;
 				INFOPLIST_FILE = "Web View Example/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.learnSwift.Web-View-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -303,13 +320,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8J39KF9DMS;
 				INFOPLIST_FILE = "Web View Example/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.learnSwift.Web-View-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
